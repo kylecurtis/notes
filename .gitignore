@@ -1,0 +1,7 @@
+# Ignore the Obsidian folder
+.obsidian/
+
+# Ignore system-specific or temporary files
+*.log
+*.tmp
+.DS_Store
