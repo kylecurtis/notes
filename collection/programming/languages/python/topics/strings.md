@@ -110,6 +110,124 @@ print(f"{2 + 2} is equal to {len(four)}!")
 
 <br>
 
+## String Slicing
+
+String slicing is a way to extract a part of a string. It allows you to obtain a substring from the original string. To slice a string, you need to specify a starting index and an ending index, separated by a colon `:`. Python uses zero-based indexing, so the first character is at index `0`.
+
+<br>
+
+#### Basic Slicing
+
+```python
+s = "Python Programming"
+
+# Get substring from index 0 to 5 (excluding 6)
+print(s[0:6])  # Output: "Python"
+
+# Get substring from index 7 to the end
+print(s[7:])  # Output: "Programming"
+```
+
+<br>
+
+#### Slicing Steps
+
+You can also specify a step value, which determines the characters to skip.
+
+```python
+# Get every second character in the string
+print(s[0:6:2])  # Output: "Pto"
+```
+
+<br>
+
+#### Negative Index Slicing
+
+Python allows negative indexing for its sequences. The index of `-1` represents the last character in the string.
+
+```python
+# Reverse a string using slicing
+print(s[::-1])  # Output: "gnimmargorP nohtyP"
+
+# Get last 4 characters of the string
+print(s[-4:])  # Output: "ming"
+```
+
+<br>
+
+---
+
+<br>
+
+## String Length
+
+To get the length of a string in Python, you use the `len()` function:
+
+```python
+s = "Python"
+print(len(s))  # Output: 6
+```
+
+<br>
+
+---
+
+<br>
+
+## Checking String Membership
+
+To check if a certain phrase or character is present in a string, you can use the `in` keyword:
+
+```python
+text = "Python is easy to learn."
+
+# Check if 'easy' is present in the text
+print('easy' in text)  # Output: True
+```
+
+<br>
+
+---
+
+<br>
+
+## String Immutability
+
+Strings in Python are immutable. This means that you can’t change an existing string, but you can create a new one with the desired changes (Adding another string to memory):
+
+```python
+s = "Python"
+s = "J" + s[1:]
+print(s)  # Output: "Jython"
+```
+
+<br>
+
+---
+
+<br>
+
+## String Encoding and Decoding
+
+Understanding how strings are encoded to bytes and decoded back to strings is crucial when you are working with files, network data, or other binary data sources. Python uses UTF-8 encoding by default.
+
+```python
+# Encoding a string
+s = "Python"
+encoded_s = s.encode('UTF-8')
+print(encoded_s)  # Output: b'Python'
+
+# Decoding back to string
+decoded_s = encoded_s.decode('UTF-8')
+print(decoded_s)  # Output: 'Python'
+```
+
+<br>
+
+---
+
+<br>
+
 ## Common String Methods
 
 <br>
