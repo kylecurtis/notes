@@ -6,6 +6,13 @@ All of these notes were made with and for [Obsidian](https://obsidian.md/).
 
 ## Programming Notes
 
+#### Github
+
+| Note | Topics |
+| :--: | :--: | 
+
+<br>
+
 #### Python
 
 | Note | Topics |
@@ -27,7 +34,20 @@ All of these notes were made with and for [Obsidian](https://obsidian.md/).
 
 <br>
 
-#### Github
+---
+
+<br>
+
+## Web Development
+
+#### React (JavaScript)
+
+| Note | Topics |
+| :--: | :--: | 
+
+<br>
+
+#### React (TypeScript)
 
 | Note | Topics |
 | :--: | :--: | 
