@@ -20,7 +20,7 @@ All of these notes were made with and for [Obsidian](https://obsidian.md/).
 | Note | Topics |
 | :-- | :-- |
 | [Variables](/collection/programming/languages/python/topics/variables.md) | Creating, naming, and assigning variables |
-| [Strings](/collection/programming/languages/python/topics/variables.md) | Single/multi-line strings, escape seqences, concatenation, formatted strings, strings slicing, length, membership, encoding/decoding, common methods |
+| [Strings](/collection/programming/languages/python/topics/strings.md) | Single/multi-line strings, escape seqences, concatenation, formatted strings, strings slicing, length, membership, encoding/decoding, common methods |
 | [Integers](/collection/programming/languages/python/topics/integers.md) | N/A |
 | [Lists](/collection/programming/languages/python/topics/lists.md) | Creating, length, list items, sum of, unpacking, looping, membership testing, map, filter, comprehensions, manipulation, zip function, common methods |
 
