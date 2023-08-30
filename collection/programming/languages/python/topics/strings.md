@@ -249,6 +249,8 @@ print(decoded_s)  # Python
 
 ## Common String Methods
 
+Python string methods are built-in functions provided by the Python language for manipulating and querying strings.
+
 <br>
 
 ---
