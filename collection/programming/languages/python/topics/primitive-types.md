@@ -1,8 +1,0 @@
-
-## Integer
-
-## Float
-
-## String
-
-## Boolean
