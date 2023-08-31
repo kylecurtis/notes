@@ -17,7 +17,7 @@ A Python list is an ordered collection of items, which can be of heterogeneous t
 
 <br>
 
-####  Using Square Brackets: 
+####  Using Square Brackets
 
 Lists can be defined using square brackets `[]` with items separated by commas.
   ```python
@@ -26,7 +26,7 @@ Lists can be defined using square brackets `[]` with items separated by commas.
 
 <br>
 
-#### Using the List Constructor: 
+#### Using the List Constructor
 
 Lists can also be created using the `list()` constructor.
   ```python
@@ -35,7 +35,7 @@ Lists can also be created using the `list()` constructor.
 
 <br>
 
-#### Reversing a List:
+#### Reversing a List
 
 ```python
 celestial_bodies = ["Sun", "Moon", "Jupiter", "Mars"]
@@ -46,7 +46,7 @@ print(reversed_bodies)  # Output: ["Mars", "Jupiter", "Moon", "Sun"]
 
 <br>
 
-#### Generating from Another List:
+#### Generating from Another List
 
 ```python
 numbers = [1, 2, 3, 4, 5]
@@ -57,7 +57,7 @@ print(squares)  # Output: [1, 4, 9, 16, 25]
 
 <br>
 
-#### Filtering Elements:
+#### Filtering Elements
 
 ```python
 numbers = [1, 2, 3, 4, 5, 6]
