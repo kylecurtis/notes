@@ -14,6 +14,8 @@ Generators in Python are a powerful tool for creating iterators without the need
 
 ## What is a Generator?
 
+<br>
+
 A generator is a special type of iterator that allows you to iterate over a sequence of values, but unlike lists or arrays, they don't store all the items in memory. Instead, they generate each item on-the-fly and yield it one by one.
 
 <br>
@@ -114,6 +116,8 @@ filtered_data_gen = (x for x in data_gen if x > 10)
 
 ## Working with Generators
 
+<br>
+
 #### `next()` Function
 
 The `next()` function retrieves the next item from a generator:
@@ -159,6 +163,8 @@ def counter():
 <br>
 
 ## Combining Generators
+
+<br>
 
 Generators can be chained together for more complex operations:
 
