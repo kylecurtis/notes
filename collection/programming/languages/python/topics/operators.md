@@ -1,3 +1,9 @@
+<br>
+
+---
+
+<br>
+
 Operators are special symbols in Python that carry out arithmetic or logical computation. The value that the operator operates on is called the operand.
 
 <br>
@@ -7,6 +13,8 @@ Operators are special symbols in Python that carry out arithmetic or logical com
 <br>
 
 ## Arithmetic Operators
+
+<br>
 
 Arithmetic operators are used with numeric values to perform common mathematical operations:
 
@@ -41,6 +49,8 @@ print(10 // 3)  # Output: 3
 
 ## Comparison Operators
 
+<br>
+
 Comparison operators are used to compare values. It either returns `True` or `False` according to the condition.
 
 ```python
@@ -71,6 +81,8 @@ print(2 <= 3)  # Output: True
 
 ## Logical Operators
 
+<br>
+
 Logical operators are the `and`, `or`, `not` operators.
 
 ```python
@@ -93,6 +105,8 @@ print(not x)  # Output: False
 
 ## Assignment Operators
 
+<br>
+
 Assignment operators are used in Python to assign values to variables.
 
 ```python
@@ -111,6 +125,8 @@ a /= 10  # Divide AND (equivalent to a = a / 10)
 
 ## Identity Operators
 
+<br>
+
 `is` and `is not` are the identity operators in Python. They are used to check if two values (or variables) are located on the same part of the memory.
 
 ```python
@@ -126,6 +142,8 @@ print(a is b)  # Output: True
 <br>
 
 ## Bitwise Operators
+
+<br>
 
 Bitwise operators act on operands as if they were strings of binary digits. They operate bit by bit, hence the name.
 
@@ -151,6 +169,8 @@ print(~a)  # Output: -11 (binary: -(1011))
 
 ## Ternary Operators
 
+<br>
+
 Ternary operators evaluate something based on a condition being true or not. It is a shortcut for the `if` statement.
 
 ```python
@@ -168,6 +188,8 @@ print(x if x < y else y)  # Output: 10
 
 ## Chaining Comparison Operators
 
+<br>
+
 An interesting feature of Python is the ability to chain multiple comparisons to perform a more complex test.
 
 ```python
@@ -176,3 +198,169 @@ x = 10
 # check if x is greater than 5 AND less than 15
 print(5 < x < 15)  # Output: True
 ```
+
+<br>
+
+---
+
+<br>
+
+## Unpacking Operators in Python
+
+<br>
+
+Unpacking operators, commonly known as the splat (`*`) and double-splat (`**`) operators, allow you to extract values from iterables in Python. They're integral in various contexts, including function arguments, multiple assignment, and data structure transformations. 
+
+<br>
+
+#### `*` Operator
+
+The single asterisk (`*`) is used for unpacking iterables such as lists and tuples:
+
+```python
+numbers = [1, 2, 3, 4]
+a, *b, c = numbers
+print(a)  # 1
+print(b)  # [2, 3]
+print(c)  # 4
+```
+
+In the example above, `b` captures the middle portion of the list, demonstrating the flexibility of the `*` operator.
+
+<br>
+
+#### `**` Operator
+
+The double asterisk (`**`) is used to unpack dictionaries. Each key-value pair in the dictionary becomes a named argument:
+
+```python
+data = {"name": "John", "age": 25}
+def display_data(name, age):
+    print(f"{name} is {age} years old")
+
+display_data(**data)  # Outputs: John is 25 years old
+```
+
+<br>
+
+---
+
+<br>
+
+## Unpacking in Function Arguments
+
+<br>
+
+#### *args
+
+In function definitions, the `*` operator is used to capture a variable number of positional arguments into a tuple:
+
+```python
+def function_with_args(*args):
+    for arg in args:
+        print(arg)
+
+function_with_args(1, 2, 3, 4)  # Outputs each number on a new line
+```
+
+<br>
+
+#### \**kwargs
+
+Similarly, the `**` operator captures a variable number of keyword arguments into a dictionary:
+
+```python
+def function_with_kwargs(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key} = {value}")
+
+function_with_kwargs(name="Alice", age=30)  # Outputs each key-value pair on a new line
+```
+
+<br>
+
+---
+
+<br>
+
+## Merging Iterables
+
+<br>
+
+#### Lists and Tuples
+
+You can use the `*` operator to merge two or more lists or tuples:
+
+```python
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+merged_list = [*list1, *list2]
+print(merged_list)  # [1, 2, 3, 4, 5, 6]
+```
+
+#### Dictionaries
+
+The `**` operator allows merging of dictionaries:
+
+```python
+dict1 = {"a": 1, "b": 2}
+dict2 = {"b": 3, "c": 4}
+merged_dict = {**dict1, **dict2}
+print(merged_dict)  # {'a': 1, 'b': 3, 'c': 4}
+```
+
+Note that if the dictionaries have overlapping keys, the value from the latter dictionary (`dict2` in the example) will overwrite the previous one.
+
+<br>
+
+---
+
+<br>
+
+## Extended Uses
+
+<br>
+
+#### Nested Unpacking
+
+Python supports nested unpacking for more complex data structures:
+
+```python
+data = [1, [2, 3, 4], 5]
+a, (b, *c), d = data
+print(a, b, c, d)  # Outputs: 1 2 [3, 4] 5
+```
+
+<br>
+
+#### Passing Iterables to Functions
+
+The unpacking operators can be utilized when you have an iterable, and a function expects separate positional arguments:
+
+```python
+def function(a, b, c):
+    print(a, b, c)
+
+args = [1, 2, 3]
+function(*args)  # Outputs: 1 2 3
+```
+
+<br>
+
+---
+
+<br>
+
+## Considerations and Best Practices
+
+- **Readability:** While unpacking can make code concise, overuse might harm readability. Use unpacking operators where they make the code clearer, not just shorter.
+  
+- **Fixed and Variable Parts:** When using unpacking in variable assignments, it's generally clear if there's a fixed part (like `a` and `c` in the first example). Ensure the variable part (`*b` in the first example) logically captures the variable essence of your data.
+  
+- **Overwriting Values:** Be cautious when merging dictionaries using `**`. If there's a key overlap, the latter value will overwrite the former, potentially leading to lost data.
+
+<br>
+
+---
+
+<br>
