@@ -159,6 +159,8 @@ for item in reversed([1, 2, 3]):
 
 ## Infinite Iterators
 
+<br>
+
 Functions like `itertools.count` produce an infinite sequence, so they'll iterate indefinitely unless stopped.
 
 <br>
@@ -168,6 +170,8 @@ Functions like `itertools.count` produce an infinite sequence, so they'll iterat
 <br>
 
 ## Comprehensions: Syntactic Sugar for Iterables
+
+<br>
 
 Create new iterables using a more concise syntax:
 
@@ -182,5 +186,7 @@ Create new iterables using a more concise syntax:
 <br>
 
 ## Conclusion
+
+<br>
 
 Understanding iterables is crucial for efficient data manipulation in Python. They form the backbone of many operations and algorithms, making tasks simpler and more expressive. Always remember the principle: Python's for-loop doesn't iterate over elements, but over iterators.
