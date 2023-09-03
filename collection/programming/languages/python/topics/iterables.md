@@ -120,11 +120,11 @@ print(next(iterator))  # Outputs: 3
 
 #### `enumerate()`
 
-Get the index along with the item:
+The order of the returned tuple is `(index, value)`.
 
 ```python
-for idx, item in enumerate(["a", "b", "c"]):
-    print(idx, item)  # Outputs: (0, "a"), (1, "b"), (2, "c")
+for i, n in enumerate([1, 2, 3]):
+    print(i, n)  # Outputs: (0, 1), (1, 2), (2, 3)
 ```
 
 <br>
