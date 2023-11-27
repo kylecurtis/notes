@@ -1,6 +1,0 @@
-
-## Var
-
-## Let
-
-## Const
